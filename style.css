@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+#navbar {
+  display: flex;
+  position: sticky;
+  align-items: center;
+  height: 105px;
+  top: 0px;
+  left: 0px;
+}
+#navbar::before {
+  content: "";
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  height: 80%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.5;
+}
+#navbar ul {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+#logo img {
+  height: 130px;
+  width: 100px;
+  margin-top: 40px;
+}
+
+.item a {
+  text-decoration: none;
+
+  padding: 25px;
+  color: white;
+  margin: 15px;
+}
+.item a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+.item {
+  list-style: none;
+}
+
+#header-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  flex-direction: column;
+  height: 360px;
+  margin-top: 85px;
+  font-family: "Uchen", serif;
+}
+#header-img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 69.5%;
+  background: url("img/headpic.jpg") center/cover;
+  z-index: -2;
+  opacity: 0.8;
+  top: 0px;
+  left: 0px;
+}
+#header-img h1 {
+  padding: 10px;
+  font-size: 2em;
+  font-family: "Lobster", cursive;
+  background-color: rgba(28, 255, 142, 0.61);
+}
+#header-img p {
+  padding: 10px;
+  font-size: 25px;
+  font-family: "Roboto Mono", monospace;
+  font-weight: bolder;
+  -webkit-text-stroke: white;
+}
+#header-img button {
+  font-size: 25px;
+  padding: 0px 15px;
+  background-color: greenyellow;
+  border-radius: 15px;
+}
+#header-img button a {
+  text-decoration: none;
+}
+
+#header-img button a:hover {
+  color: white;
+}
+#header-img button:hover {
+  font-size: 25px;
+  padding: 0px 15px;
+  background-color: red;
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
+}
+/* service start */
+#service-id {
+  display: flex;
+  margin: 40px;
+}
+#service-container h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 20px;
+}
+#service-id .box {
+  display: block;
+
+  border: 3px solid rebeccapurple;
+  margin: auto;
+  width: 430px;
+  height: 231px;
+  background-color: rgba(116, 116, 116, 0.055);
+  border-radius: 15px;
+}
+#service-id img {
+  height: 100px;
+  display: block;
+  margin: auto;
+}
+
+#service-id h2 {
+  text-align: center;
+}
+#service-id p {
+  text-align: center;
+}
+
+/* form section */
+#form::before {
+  content: "";
+  position: absolute;
+  background: url("img/formbg.jpg") no-repeat center center/cover;
+  height: 500px;
+  width: 100%;
+  z-index: -1;
+}
+
+#form {
+  height: 500px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(78, 78, 78, 0.651);
+  margin-top: 10px;
+}
+#form .formbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 25px;
+}
+#form .formbox label {
+  padding: 10px;
+  margin-top: 10px;
+  
+}
+#form input{
+  font-size: 20px;
+  border-radius: 10px;
+  height: 30px;
+}
+.formh h1 {
+  font-size: 3em;
+  margin-top: 10px;
+  color: black;
+  text-align: center;
+}
+#form .checkbox {
+  display: block;
+  width: 100px;
+  margin: 30px auto;
+  font-size: 23px;
+}
+#form .checkbox button {
+  margin: 31px -25px;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 15px;
+  border: 3px solid greenyellow;
+}
+#form .checkbox button:hover {
+  margin: 31px -25px;
+  padding: 10px 10px;
+  font-size: 20px;
+  border-radius: 15px;
+  border: 3px solid rgb(255, 189, 7);
+  background-color: rgb(255, 1, 1);
+  color: rgb(255, 255, 255);
+}

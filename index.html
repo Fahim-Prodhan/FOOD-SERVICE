@@ -1,12 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Welcome To Fresh Food Store</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <img src="img/logo.png" alt="Food Coat" />
+      </div>
+      <ul id="list-item">
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#">About Us</a></li>
+        <li class="item"><a href="#service-container">Services</a></li>
+        <li class="item"><a href="#">Food list</a></li>
+        <li class="item"><a href="#">Contact us</a></li>
+      </ul>
+    </nav>
+    <section id="header-img">
+      <h1>Welcome to Our Restaurent</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+        reprehender
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+        reprehender
+      </p>
+      <button><a href="#form">Order Now</a></button>
+    </section>
+    <section id="service-container">
+      <h1>Our Services</h1>
+
+      <div id="service-id">
+        <div class="box">
+          <img src="img/food.png" alt="" />
+          <h2>Our Services</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos culpa
+            pariatur repellat dolorem molestias id? Optio repudiandae beatae
+            doloribus neque!
+          </p>
+        </div>
+        <div class="box">
+          <img src="img/pngwing.com.png" alt="" />
+          <h2>Our Services</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos culpa
+            pariatur repellat dolorem molestias id? Optio repudiandae beatae
+            doloribus neque!
+          </p>
+        </div>
+        <div class="box">
+          <img src="img/pngegg.png   " alt="" />
+          <h2>Our Services</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos culpa
+            pariatur repellat dolorem molestias id? Optio repudiandae beatae
+            doloribus neque!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="formh">
+      <h1>Fill the Form</h1>
+    </section>
+    <section id="form">
+      <form >
+
+        
+
+        <div class="formbox">
+
+
+        <label for="text"><input type="text" name="text" id="text" placeholder=" Enter Name"></label>
+        <label for="email"><input type="email" name="email" id="email" placeholder=" Enter Email"></label>
+        <label for=""><input type="tel" name="number" id="number" placeholder=" Enter Phone Number"></label>
+        <label for="address"><input type="text" name="address" id="address" placeholder=" Enter Address"></label>
+
+      </div>
+
+      <div class="checkbox">
+        <input type="checkbox" id="food1" name="food1" value="Pizza">
+        <label for="food1">Pizza</label><br>
+        <input type="checkbox" id="food2" name="food2" value="Burger">
+        <label for="food2">Burger</label><br>
+        <input type="checkbox" id="food3" name="food3" value="Hot Dog">
+        <label for="food3">Hot Dog</label><br>
+        <button type="submit">Submit Form</button>
+        </div>
+     
+      </form>
+    </section>
+  </body>
 </html>
