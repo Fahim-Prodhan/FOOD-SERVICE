@@ -115,7 +115,7 @@ html {
 #service-container h1 {
   text-align: center;
   font-size: 3rem;
-  margin-top: 20px;
+  margin-top: 20px;background-color: cyan;
 }
 #service-id .box {
   display: block;
@@ -156,6 +156,13 @@ html {
   background-color: rgba(78, 78, 78, 0.651);
   margin-top: 10px;
 }
+.formh h1 {
+  font-size: 3em;
+  margin-top: 10px;
+  color: black;
+  text-align: center;
+  background-color: cyan;
+}
 #form .formbox {
   display: flex;
   align-items: center;
@@ -173,12 +180,7 @@ html {
   border-radius: 10px;
   height: 30px;
 }
-.formh h1 {
-  font-size: 3em;
-  margin-top: 10px;
-  color: black;
-  text-align: center;
-}
+
 #form .checkbox {
   display: block;
   width: 100px;
@@ -200,4 +202,18 @@ html {
   border: 3px solid rgb(255, 189, 7);
   background-color: rgb(255, 1, 1);
   color: rgb(255, 255, 255);
+}
+/* partner part */
+#partner img{
+  display: block;
+  margin: 11px auto;
+  height: 130px;
+  float: left;
+  padding: 30px;
+}
+
+#partner h1{
+text-align: center;
+font-size: 3em;
+margin-top: 40px;background-color: cyan;
 }
