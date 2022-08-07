@@ -8,9 +8,9 @@ html {
 
 #navbar {
   display: flex;
-  position: sticky;
+  position: relative;
   align-items: center;
-  height: 105px;
+  height: 90px;
   top: 0px;
   left: 0px;
 }
@@ -38,7 +38,7 @@ html {
 .item a {
   text-decoration: none;
 
-  padding: 25px;
+  padding: 10px;
   color: white;
   margin: 15px;
 }
@@ -46,6 +46,7 @@ html {
   background-color: white;
   color: black;
   border-radius: 20px;
+  padding: 10px;
 }
 .item {
   list-style: none;
@@ -110,18 +111,18 @@ html {
 /* service start */
 #service-id {
   display: flex;
-  margin: 40px;
+ 
 }
 #service-container h1 {
   text-align: center;
   font-size: 3rem;
-  margin-top: 20px;background-color: cyan;
+  margin-top: 50px;
+  background-color: cyan;
 }
 #service-id .box {
   display: block;
-
   border: 3px solid rebeccapurple;
-  margin: auto;
+  margin:10px auto;
   width: 430px;
   height: 231px;
   background-color: rgba(116, 116, 116, 0.055);
@@ -141,6 +142,7 @@ html {
 }
 
 /* form section */
+
 #form::before {
   content: "";
   position: absolute;
@@ -158,7 +160,7 @@ html {
 }
 .formh h1 {
   font-size: 3em;
-  margin-top: 10px;
+  margin-top: 50px;
   color: black;
   text-align: center;
   background-color: cyan;
@@ -175,27 +177,44 @@ html {
   margin-top: 10px;
   
 }
-#form input{
+#form .formbox input{
   font-size: 20px;
   border-radius: 10px;
   height: 30px;
 }
-
-#form .checkbox {
-  display: block;
-  width: 100px;
-  margin: 30px auto;
-  font-size: 23px;
+#checkbox{
+  display: flex;
+  justify-content: space-evenly;
 }
-#form .checkbox button {
-  margin: 31px -25px;
+
+#form .checkbox1 {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  margin-top: 15px;
+  font-size: 22px;
+  align-items: flex-start;
+}
+#form .checkbox2 {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  margin-top: 15px;
+  font-size: 22px;
+  align-items: flex-start;
+}
+form button {
+  margin-left: 690px;
+  margin-top: 50px;
   padding: 10px 10px;
   font-size: 20px;
   border-radius: 15px;
   border: 3px solid greenyellow;
+  align-items: center;
 }
-#form .checkbox button:hover {
-  margin: 31px -25px;
+form button:hover {
+  margin-left: 690px;
+  margin-top: 50px;
   padding: 10px 10px;
   font-size: 20px;
   border-radius: 15px;
@@ -204,16 +223,42 @@ html {
   color: rgb(255, 255, 255);
 }
 /* partner part */
+
+
+.footerimg::before{
+  content: "";
+  background: url("img/partner\ bg.jpg") no-repeat center center/cover;
+  position:absolute;
+  height: 150px;
+  width: 100%;
+  z-index: -1;
+  opacity: .5;
+}
+#partner .footerimg{
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: rgba(51, 255, 0, 0.315);
+height: 150px;
+width: 100%;
+margin-top: 15px;
+
+
+}
 #partner img{
-  display: block;
-  margin: 11px auto;
-  height: 130px;
-  float: left;
-  padding: 30px;
+height: 111px;
+padding: 35px;
+margin-top: 20px;
 }
 
 #partner h1{
 text-align: center;
 font-size: 3em;
-margin-top: 40px;background-color: cyan;
+margin-top: 50px;
+background-color: cyan;
+}
+footer{
+  text-align: center;
+  margin: 50px;
+  font-size: 20px;
 }
